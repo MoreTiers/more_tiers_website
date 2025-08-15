@@ -10,7 +10,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/moretiers.png" alt="More Tiers" width={32} height={32} />
-          <span className="font-semibold text-lg">More Tears</span>
+          <span className="font-semibold text-lg">More Tiers</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           <Link href="/services" className="text-sm text-slate-700 hover:text-slate-900">Services</Link>
