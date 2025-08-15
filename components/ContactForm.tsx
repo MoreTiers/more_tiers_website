@@ -41,7 +41,7 @@ export default function ContactForm() {
     const errors = validate(payload)
     if (Object.keys(errors).length > 0) {
       setStatus('error')
-      setMessage('Please fix the errors below and try again.')
+      setMessage('Please fix the errors and try again.')
       setFieldErrors(errors)
       return
     }
