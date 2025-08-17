@@ -29,3 +29,5 @@ Thumbs.db
 # Optional: lock files (if you use only one package manager)
 # yarn.lock
 package-lock.json
+
+/generated/prisma
