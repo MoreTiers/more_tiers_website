@@ -16,7 +16,8 @@ yarn-error.log*
 Thumbs.db
 
 # Env files
-.env.local
+.env*
+!.env.template
 
 # VS Code
 .vscode/
@@ -29,3 +30,7 @@ Thumbs.db
 # Optional: lock files (if you use only one package manager)
 # yarn.lock
 package-lock.json
+
+/generated/prisma
+
+dev.db
