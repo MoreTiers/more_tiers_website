@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { Toaster } from '@/components/ui/sonner'
+
 
 export const metadata: Metadata = {
   title: 'More Tiers — College Essay Coaching',
@@ -22,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toaster richColors />
       </body>
     </html>
   )

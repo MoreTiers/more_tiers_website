@@ -1,8 +1,17 @@
 import Hero from '@/components/Hero'
 import ProcessSteps from '@/components/ProcessSteps'
 import CTA from '@/components/CTA'
+import { headers } from 'next/headers'
+import { auth } from '@/lib/auth/auth'// Adjusted to use absolute import based on your project structure
 
-export default function HomePage() {
+export  default async function HomePage() {
+  const session = await auth.api.getSession({
+        headers: await headers()
+  })
+  if(!session) {
+      return <div>Not authenticated</div>
+  }
+
   return (
     <>
       <Hero />
